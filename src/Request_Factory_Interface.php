@@ -1,10 +1,9 @@
 <?php
 
-declare(strict_types=1);
-
+declare (strict_types=1);
 namespace Psr\Http\Message;
 
-interface RequestFactoryInterface
+interface Request_Factory_Interface
 {
     /**
      * Create a new request.
@@ -14,5 +13,5 @@ interface RequestFactoryInterface
      *     the value is a string, the factory MUST create a UriInterface
      *     instance based on it.
      */
-    public function createRequest(string $method, $uri): RequestInterface;
+    public function create_request(string $method, $uri): Request_Interface;
 }

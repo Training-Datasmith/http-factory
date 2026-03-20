@@ -1,10 +1,9 @@
 <?php
 
-declare(strict_types=1);
-
+declare (strict_types=1);
 namespace Psr\Http\Message;
 
-interface StreamFactoryInterface
+interface Stream_Factory_Interface
 {
     /**
      * Create a new stream from a string.
@@ -13,8 +12,7 @@ interface StreamFactoryInterface
      *
      * @param string $content String content with which to populate the stream.
      */
-    public function createStream(string $content = ''): StreamInterface;
-
+    public function create_stream(string $content = ''): Stream_Interface;
     /**
      * Create a stream from an existing file.
      *
@@ -29,8 +27,7 @@ interface StreamFactoryInterface
      * @throws \RuntimeException If the file cannot be opened.
      * @throws \InvalidArgumentException If the mode is invalid.
      */
-    public function createStreamFromFile(string $filename, string $mode = 'r'): StreamInterface;
-
+    public function create_stream_from_file(string $filename, string $mode = 'r'): Stream_Interface;
     /**
      * Create a new stream from an existing resource.
      *
@@ -38,5 +35,5 @@ interface StreamFactoryInterface
      *
      * @param resource $resource PHP resource to use as basis of stream.
      */
-    public function createStreamFromResource($resource): StreamInterface;
+    public function create_stream_from_resource($resource): Stream_Interface;
 }

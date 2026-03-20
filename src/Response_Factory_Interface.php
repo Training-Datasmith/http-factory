@@ -1,10 +1,9 @@
 <?php
 
-declare(strict_types=1);
-
+declare (strict_types=1);
 namespace Psr\Http\Message;
 
-interface ResponseFactoryInterface
+interface Response_Factory_Interface
 {
     /**
      * Create a new response.
@@ -14,5 +13,5 @@ interface ResponseFactoryInterface
      *     in generated response; if none is provided implementations MAY use
      *     the defaults as suggested in the HTTP specification.
      */
-    public function createResponse(int $code = 200, string $reasonPhrase = ''): ResponseInterface;
+    public function create_response(int $code = 200, string $reason_phrase = ''): Response_Interface;
 }

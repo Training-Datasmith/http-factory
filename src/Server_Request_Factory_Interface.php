@@ -1,10 +1,9 @@
 <?php
 
-declare(strict_types=1);
-
+declare (strict_types=1);
 namespace Psr\Http\Message;
 
-interface ServerRequestFactoryInterface
+interface Server_Request_Factory_Interface
 {
     /**
      * Create a new server request.
@@ -20,5 +19,5 @@ interface ServerRequestFactoryInterface
      * @param array $serverParams Array of SAPI parameters with which to seed
      *     the generated request instance.
      */
-    public function createServerRequest(string $method, $uri, array $serverParams = []): ServerRequestInterface;
+    public function create_server_request(string $method, $uri, array $server_params = []): Server_Request_Interface;
 }

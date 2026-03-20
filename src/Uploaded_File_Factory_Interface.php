@@ -1,10 +1,9 @@
 <?php
 
-declare(strict_types=1);
-
+declare (strict_types=1);
 namespace Psr\Http\Message;
 
-interface UploadedFileFactoryInterface
+interface Uploaded_File_Factory_Interface
 {
     /**
      * Create a new uploaded file.
@@ -25,11 +24,5 @@ interface UploadedFileFactoryInterface
      *
      * @throws \InvalidArgumentException If the file resource is not readable.
      */
-    public function createUploadedFile(
-        StreamInterface $stream,
-        ?int $size = null,
-        int $error = \UPLOAD_ERR_OK,
-        ?string $clientFilename = null,
-        ?string $clientMediaType = null
-    ): UploadedFileInterface;
+    public function create_uploaded_file(Stream_Interface $stream, ?int $size = null, int $error = \UPLOAD_ERR_OK, ?string $client_filename = null, ?string $client_media_type = null): Uploaded_File_Interface;
 }
