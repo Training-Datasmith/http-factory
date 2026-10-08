@@ -30,6 +30,17 @@
             "Psr\\Http\\Message\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "HttpFactory\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.5.20"
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
